@@ -1,0 +1,26 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "replace-readme",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-10-06",
+  "observability": { "enabled": true },
+  "workers_dev": false,
+  "routes": [{ "pattern": "replace-readme.wks.lapius7.com", "custom_domain": true }],
+  "durable_objects": { "bindings": [{ "name": "CANVAS", "class_name": "Canvas" }] },
+  "migrations": [{ "tag": "v1", "new_sqlite_classes": ["Canvas"] }],
+  "vars": {
+    // トップ・エラーページ・demo の戻り先(プロジェクトの GitHub)
+    "GITHUB_URL": "https://github.com/Lapius7/replace-readme",
+    // タップ後に戻す先(README のあるページ)
+    "REDIRECT_URL": "https://github.com/Lapius7",
+    // 画像の表示サイズ(px)。README の width と合わせる。縦横比から列数は 4 の倍数のみ
+    "WIDTH": "560",
+    "HEIGHT": "140",
+    // 列数を省略したときの既定と、指定できる範囲(横の列数。大きいほど細かい)
+    "DEFAULT_COLS": "40",
+    "MIN_COLS": "8",
+    "MAX_COLS": "96",
+    // 1 人あたり、次に押せるまでの時間(ms)
+    "COOLDOWN_MS": "60000"
+  }
+}
