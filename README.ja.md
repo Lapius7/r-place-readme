@@ -1,6 +1,6 @@
 [English](README.md) | 日本語
 
-# r-place-readme
+# r/place Readme
 
 README に置ける共有ピクセルキャンバスです。画像の中のマスをクリックすると、そのマスが点いたり消えたりします。盤面は訪れた全員で共有されます。
 

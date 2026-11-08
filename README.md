@@ -1,6 +1,6 @@
 English | [日本語](README.ja.md)
 
-# r-place-readme
+# r/place Readme
 
 A shared pixel canvas you can put in a README. Visitors click a square in the image to toggle it, and everyone sees the same board.
 
