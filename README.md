@@ -81,13 +81,7 @@ The density has to be in the URL path, not the query string. The browser replace
 Pressing a square opens a result page. It shows the board with the pressed square ringed, whether the press was counted, and the visitor's own time until the next press. It returns to the README after about six seconds.
 
 <p align="center">
-  <img src="docs/images/press-dark.png" width="300" alt="Result page in dark mode. A green dot and the text 'Placed', the pressed square ringed on the board, a progress bar showing 58 seconds until the next press, and two buttons.">
-  &nbsp;
-  <img src="docs/images/press-light-wait.png" width="300" alt="Result page in light mode, shown when the visitor has to wait before pressing again.">
-</p>
-
-<p align="center">
-  <img src="docs/images/press-mobile.png" width="200" alt="The same page at 320 px wide.">
+  <img src="docs/images/press.png" width="360" alt="Result page in dark mode. A green dot and the text 'Placed', the pressed square ringed on the board, a progress bar showing 58 seconds until the next press, and two buttons.">
 </p>
 
 The page text is in Japanese.

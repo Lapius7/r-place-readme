@@ -81,13 +81,7 @@ Cloudflare Worker で動き、盤面は Durable Object(SQLite)に保存します
 マスを押すと結果の画面が開きます。押したマスに輪がついた盤面、押した分が数えられたかどうか、押した本人の次に押せるまでの時間が出ます。約6秒後に README へ戻ります。
 
 <p align="center">
-  <img src="docs/images/press-dark.png" width="300" alt="ダークモードの結果画面。緑の点と「置きました」の文字、輪がついた押したマス、次に押せるまで58秒を示すバー、2つのボタン。">
-  &nbsp;
-  <img src="docs/images/press-light-wait.png" width="300" alt="ライトモードの結果画面。まだ押せないときの表示。">
-</p>
-
-<p align="center">
-  <img src="docs/images/press-mobile.png" width="200" alt="幅 320px での同じ画面。">
+  <img src="docs/images/press.png" width="360" alt="ダークモードの結果画面。緑の点と「置きました」の文字、輪がついた押したマス、次に押せるまで58秒を示すバー、2つのボタン。">
 </p>
 
 ## しくみ
