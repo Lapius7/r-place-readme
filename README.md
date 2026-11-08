@@ -32,13 +32,13 @@ It runs on a Cloudflare Worker with a Durable Object (SQLite) as the board store
 
 ## Quick start
 
-Paste this into your README. Change `my-board` to any name you like.
+Paste this into your README. Always replace `your-github-username` with your own GitHub username, and do not use any other name.
 
 ```html
-<a href="https://replace-readme.wks.lapius7.com/board/my-board/40/press">
+<a href="https://replace-readme.wks.lapius7.com/board/your-github-username/40/press">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://replace-readme.wks.lapius7.com/board/my-board/40.svg?mode=dark">
-    <img ismap src="https://replace-readme.wks.lapius7.com/board/my-board/40.svg?mode=light" width="560" alt="Shared canvas. Click a square to toggle it.">
+    <source media="(prefers-color-scheme: dark)" srcset="https://replace-readme.wks.lapius7.com/board/your-github-username/40.svg?mode=dark">
+    <img ismap src="https://replace-readme.wks.lapius7.com/board/your-github-username/40.svg?mode=light" width="560" alt="Shared canvas. Click a square to toggle it.">
   </picture>
 </a>
 ```
@@ -49,7 +49,7 @@ Keep these three details, or clicks land on the wrong square:
 - `width="560"` and no `height`. The image is drawn for exactly 560 px.
 - The column count (`40` above) must be the same in the image URL and the link URL.
 
-A board is created the first time someone presses it. The name is lower-cased and must match `[a-z0-9][a-z0-9-]{0,38}`.
+A board is created the first time someone presses it. Upper-case letters in your username are lower-cased, and the name must match `[a-z0-9][a-z0-9-]{0,38}`.
 
 ## URLs
 

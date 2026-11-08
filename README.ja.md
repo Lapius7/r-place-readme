@@ -32,13 +32,13 @@ Cloudflare Worker で動き、盤面は Durable Object(SQLite)に保存します
 
 ## 使い方
 
-次を README に貼ります。`my-board` は好きな名前に変えてください。
+次を README に貼ります。`your-github-username` は、必ず自分の GitHub のユーザー名に置き換えてください。それ以外の名前は使わないでください。
 
 ```html
-<a href="https://replace-readme.wks.lapius7.com/board/my-board/40/press">
+<a href="https://replace-readme.wks.lapius7.com/board/your-github-username/40/press">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://replace-readme.wks.lapius7.com/board/my-board/40.svg?mode=dark">
-    <img ismap src="https://replace-readme.wks.lapius7.com/board/my-board/40.svg?mode=light" width="560" alt="共有キャンバス。マスをクリックすると切り替わります。">
+    <source media="(prefers-color-scheme: dark)" srcset="https://replace-readme.wks.lapius7.com/board/your-github-username/40.svg?mode=dark">
+    <img ismap src="https://replace-readme.wks.lapius7.com/board/your-github-username/40.svg?mode=light" width="560" alt="共有キャンバス。マスをクリックすると切り替わります。">
   </picture>
 </a>
 ```
@@ -49,7 +49,7 @@ Cloudflare Worker で動き、盤面は Durable Object(SQLite)に保存します
 - `width="560"` を指定し、`height` は付けません。画像はちょうど 560px 用に描いています。
 - 列数(上の例では `40`)は、画像の URL とリンクの URL で同じ値にします。
 
-盤面は、最初に誰かが押した時点で作られます。名前は小文字に直され、`[a-z0-9][a-z0-9-]{0,38}` に合う必要があります。
+盤面は、最初に誰かが押した時点で作られます。ユーザー名の大文字は小文字に直され、`[a-z0-9][a-z0-9-]{0,38}` に合う必要があります。
 
 ## URL 一覧
 
