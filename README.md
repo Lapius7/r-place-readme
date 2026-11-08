@@ -1,6 +1,6 @@
 English | [日本語](README.ja.md)
 
-# replace-readme
+# r-place-readme
 
 A shared pixel canvas you can put in a README. Visitors click a square in the image to toggle it, and everyone sees the same board.
 
@@ -13,7 +13,7 @@ A shared pixel canvas you can put in a README. Visitors click a square in the im
 
 <p align="center"><sub>Sample data. The live board starts empty.</sub></p>
 
-Live service: https://replace-readme.wks.lapius7.com
+Live service: https://r-place-readme.wks.lapius7.com
 
 It runs on a Cloudflare Worker with a Durable Object (SQLite) as the board store. There is no client script. The whole thing is one `<a>`, one `<img ismap>` and a server that answers both.
 
@@ -35,10 +35,10 @@ It runs on a Cloudflare Worker with a Durable Object (SQLite) as the board store
 Paste this into your README. Always replace `your-github-username` with your own GitHub username, and do not use any other name.
 
 ```html
-<a href="https://replace-readme.wks.lapius7.com/board/your-github-username/40/press">
+<a href="https://r-place-readme.wks.lapius7.com/board/your-github-username/40/press">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://replace-readme.wks.lapius7.com/board/your-github-username/40.svg?mode=dark">
-    <img ismap src="https://replace-readme.wks.lapius7.com/board/your-github-username/40.svg?mode=light" width="560" alt="Shared canvas. Click a square to toggle it.">
+    <source media="(prefers-color-scheme: dark)" srcset="https://r-place-readme.wks.lapius7.com/board/your-github-username/40.svg?mode=dark">
+    <img ismap src="https://r-place-readme.wks.lapius7.com/board/your-github-username/40.svg?mode=light" width="560" alt="Shared canvas. Click a square to toggle it.">
   </picture>
 </a>
 ```

@@ -1,6 +1,6 @@
 [English](README.md) | 日本語
 
-# replace-readme
+# r-place-readme
 
 README に置ける共有ピクセルキャンバスです。画像の中のマスをクリックすると、そのマスが点いたり消えたりします。盤面は訪れた全員で共有されます。
 
@@ -13,7 +13,7 @@ README に置ける共有ピクセルキャンバスです。画像の中のマ�
 
 <p align="center"><sub>見本のデータです。実際の盤面は空の状態から始まります。</sub></p>
 
-公開先: https://replace-readme.wks.lapius7.com
+公開先: https://r-place-readme.wks.lapius7.com
 
 Cloudflare Worker で動き、盤面は Durable Object(SQLite)に保存します。クライアントのスクリプトはありません。`<a>` が1つ、`<img ismap>` が1つ、その両方に応えるサーバーだけで成り立っています。
 
@@ -35,10 +35,10 @@ Cloudflare Worker で動き、盤面は Durable Object(SQLite)に保存します
 次を README に貼ります。`your-github-username` は、必ず自分の GitHub のユーザー名に置き換えてください。それ以外の名前は使わないでください。
 
 ```html
-<a href="https://replace-readme.wks.lapius7.com/board/your-github-username/40/press">
+<a href="https://r-place-readme.wks.lapius7.com/board/your-github-username/40/press">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://replace-readme.wks.lapius7.com/board/your-github-username/40.svg?mode=dark">
-    <img ismap src="https://replace-readme.wks.lapius7.com/board/your-github-username/40.svg?mode=light" width="560" alt="共有キャンバス。マスをクリックすると切り替わります。">
+    <source media="(prefers-color-scheme: dark)" srcset="https://r-place-readme.wks.lapius7.com/board/your-github-username/40.svg?mode=dark">
+    <img ismap src="https://r-place-readme.wks.lapius7.com/board/your-github-username/40.svg?mode=light" width="560" alt="共有キャンバス。マスをクリックすると切り替わります。">
   </picture>
 </a>
 ```

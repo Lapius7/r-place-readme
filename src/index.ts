@@ -102,7 +102,7 @@ function render(cells: Map<number, number>, cols: number, rows: number, W: numbe
 const NOCACHE = { "cache-control": "no-cache, no-store, max-age=0, must-revalidate" };
 
 function errorPage(env: Env, status: number, title: string, msg: string): Response {
-  const html = `<!doctype html><html lang="ja"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${status} ${title} · replace-readme</title><link rel="icon" href="data:,">
+  const html = `<!doctype html><html lang="ja"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${status} ${title} · r-place-readme</title><link rel="icon" href="data:,">
 <style>:root{color-scheme:light dark}*{box-sizing:border-box}body{margin:0;min-height:100vh;display:grid;place-items:center;padding:24px;font:15px/1.7 system-ui,sans-serif}main{max-width:420px;text-align:center}.c{font:600 56px/1 ui-monospace,SFMono-Regular,Menlo,monospace;opacity:.35}h1{font-size:20px;margin:12px 0 4px}p{margin:0 0 24px;opacity:.7}a{display:inline-block;padding:9px 18px;border:1px solid #8886;border-radius:8px;color:inherit;text-decoration:none;font-weight:500}a:hover{background:#8882}a:focus-visible{outline:2px solid currentColor;outline-offset:2px}</style>
 <main><div class="c">${status}</div><h1>${title}</h1><p>${msg}</p><a href="${env.GITHUB_URL}">GitHub で使い方を見る</a></main></html>`;
   return new Response(html, { status, headers: { "content-type": "text/html; charset=utf-8", ...NOCACHE } });
